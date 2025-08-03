@@ -4,12 +4,12 @@ This project analyzes trading performance data from a CSV file (OrdersReport.csv
 #Purpose
 #The analysis aims to:
 
-# Clean and preprocess trading data.
+## Clean and preprocess trading data.
 Calculate key metrics such as total profit, trade duration, and stop loss/take profit hits.
 Simulate and analyze the probability of profit and loss over the next 100 trades.
 Provide best-case and worst-case scenario estimates based on simulated data.
 
-# Data
+## Data
 The input data is sourced from OrdersReport.csv, containing trading records with columns:
 
 Ticket: Unique trade identifier
@@ -24,23 +24,23 @@ Take Profit, Stop Loss: Target levels
 Profit, Swap, Commission: Financial outcomes
 
 The analysis derives additional features like trade duration, profit per lot, and stop distance.
-#Key Features
+## Key Features
 
-Data Cleaning:
+## Data Cleaning:
 Converts datetime columns to appropriate formats.
 Removes unwanted columns (e.g., Ticket, Commission).
 Normalizes symbol names by removing "+" and "." characters.
 Adjusts profit calculations to include swap and commission.
 
 
-Derived Metrics:
+## Derived Metrics:
 Trade duration in minutes.
 Profit per lot.
 Identification of stop loss and take profit hits.
 Stop distance as a percentage.
 
 
-Analysis:
+## Analysis:
 Total profit: 118.02 PLN (Polish Złoty).
 Trade period: May 19, 2020, to June 16, 2020 (28 days).
 Number of trades: 92.
@@ -51,13 +51,13 @@ Maximum simulated profit: 1305.32 PLN.
 Minimum simulated profit: -773.00 PLN.
 
 
-Visualizations:
+## Visualizations:
 Probability density plot of profit/loss with a highlighted loss region.
 Cumulative distribution plot of simulated profits.
 
 
 
-Requirements
+## Requirements
 The following Python libraries are required:
 
 pandas
@@ -68,7 +68,7 @@ scipy
 Install them using:
 pip install pandas numpy matplotlib scipy
 
-Usage
+## Usage
 
 Ensure OrdersReport.csv is available at the specified path (/home/dev/Desktop/OrdersReport.csv).
 Run the analysis script to process the data, generate metrics, and create visualizations.
@@ -79,7 +79,7 @@ Visualizations saved as probability_of_loss.png in the ./img/ directory.
 
 
 
-Output
+## Output
 
 Cleaned Data: The processed dataset has 92 rows and 24 columns after adding derived features and removing unwanted ones.
 Visualizations:
@@ -87,13 +87,13 @@ A probability density plot showing the likelihood of loss (saved as ./img/probab
 A cumulative distribution plot of simulated profits.
 
 
-Key Metrics:
+## Key Metrics:
 Total profit, trade count, and probability of profit/loss.
 Best-case and worst-case profit scenarios based on quantiles.
 
 
 
-Notes
+## Notes
 
 The input CSV file must be correctly formatted and accessible.
 The currency for profit/loss is PLN (Polish Złoty).
