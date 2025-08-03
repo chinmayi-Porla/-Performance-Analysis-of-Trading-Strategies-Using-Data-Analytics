@@ -1,15 +1,15 @@
 # Trading-Result-Analysis
-#Overview
+# Overview
 This project analyzes trading performance data from a CSV file (OrdersReport.csv). It processes trading records, performs data cleaning, and generates statistical insights and visualizations to evaluate trading outcomes over a 28-day period.
 #Purpose
 #The analysis aims to:
 
-#Clean and preprocess trading data.
+# Clean and preprocess trading data.
 Calculate key metrics such as total profit, trade duration, and stop loss/take profit hits.
 Simulate and analyze the probability of profit and loss over the next 100 trades.
 Provide best-case and worst-case scenario estimates based on simulated data.
 
-#Data
+# Data
 The input data is sourced from OrdersReport.csv, containing trading records with columns:
 
 Ticket: Unique trade identifier
