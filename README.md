@@ -1,4 +1,4 @@
-# Performance Analysis of Tradig Strategies Using Data Analytics
+# Performance Analysis of Trading Strategies Using Data Analytics
 ### Overview
 This project analyzes trading performance data from a CSV file (OrdersReport.csv). It processes trading records, performs data cleaning, and generates statistical insights and visualizations to evaluate trading outcomes over a 28-day period.
 #Purpose
